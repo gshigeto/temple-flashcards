@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		803CC7CC1F95933900654A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CC7CB1F95933900654A9C /* AppDelegate.swift */; };
-		803CC7CE1F95933900654A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CC7CD1F95933900654A9C /* ViewController.swift */; };
 		803CC7D11F95933900654A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803CC7CF1F95933900654A9C /* Main.storyboard */; };
 		803CC7D31F95933900654A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803CC7D21F95933900654A9C /* Assets.xcassets */; };
 		803CC7D61F95933900654A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803CC7D41F95933900654A9C /* LaunchScreen.storyboard */; };
+		803CC7E21F95946600654A9C /* Temple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CC7E11F95946600654A9C /* Temple.swift */; };
+		803CC7E41F959DDB00654A9C /* TempleDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CC7E31F959DDB00654A9C /* TempleDeck.swift */; };
+		803CC7E61F95A3B800654A9C /* TempleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CC7E51F95A3B800654A9C /* TempleCardView.swift */; };
+		803CC7E81F95A4AD00654A9C /* TempleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CC7E71F95A4AD00654A9C /* TempleCell.swift */; };
+		803CC7EC1F95AC6000654A9C /* TempleDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CC7EB1F95AC6000654A9C /* TempleDeckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		803CC7C81F95933900654A9C /* Temple Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Temple Flashcards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		803CC7CB1F95933900654A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		803CC7CD1F95933900654A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		803CC7D01F95933900654A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		803CC7D21F95933900654A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		803CC7D51F95933900654A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		803CC7D71F95933900654A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803CC7E11F95946600654A9C /* Temple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temple.swift; sourceTree = "<group>"; };
+		803CC7E31F959DDB00654A9C /* TempleDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleDeck.swift; sourceTree = "<group>"; };
+		803CC7E51F95A3B800654A9C /* TempleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleCardView.swift; sourceTree = "<group>"; };
+		803CC7E71F95A4AD00654A9C /* TempleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleCell.swift; sourceTree = "<group>"; };
+		803CC7EB1F95AC6000654A9C /* TempleDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleDeckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				803CC7CA1F95933900654A9C /* Temple Flashcards */,
+				803CC7D21F95933900654A9C /* Assets.xcassets */,
 				803CC7C91F95933900654A9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +63,49 @@
 		803CC7CA1F95933900654A9C /* Temple Flashcards */ = {
 			isa = PBXGroup;
 			children = (
+				803CC7DE1F95943500654A9C /* Model */,
+				803CC7DF1F95944200654A9C /* View */,
+				803CC7E01F95944B00654A9C /* Controller */,
+				803CC7DD1F95941D00654A9C /* Supporting Files */,
+			);
+			path = "Temple Flashcards";
+			sourceTree = "<group>";
+		};
+		803CC7DD1F95941D00654A9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				803CC7CB1F95933900654A9C /* AppDelegate.swift */,
-				803CC7CD1F95933900654A9C /* ViewController.swift */,
-				803CC7CF1F95933900654A9C /* Main.storyboard */,
-				803CC7D21F95933900654A9C /* Assets.xcassets */,
 				803CC7D41F95933900654A9C /* LaunchScreen.storyboard */,
 				803CC7D71F95933900654A9C /* Info.plist */,
 			);
-			path = "Temple Flashcards";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		803CC7DE1F95943500654A9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				803CC7E11F95946600654A9C /* Temple.swift */,
+				803CC7E31F959DDB00654A9C /* TempleDeck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		803CC7DF1F95944200654A9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				803CC7CF1F95933900654A9C /* Main.storyboard */,
+				803CC7E51F95A3B800654A9C /* TempleCardView.swift */,
+				803CC7E71F95A4AD00654A9C /* TempleCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		803CC7E01F95944B00654A9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				803CC7EB1F95AC6000654A9C /* TempleDeckViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803CC7CE1F95933900654A9C /* ViewController.swift in Sources */,
+				803CC7E61F95A3B800654A9C /* TempleCardView.swift in Sources */,
+				803CC7EC1F95AC6000654A9C /* TempleDeckViewController.swift in Sources */,
+				803CC7E21F95946600654A9C /* Temple.swift in Sources */,
+				803CC7E41F959DDB00654A9C /* TempleDeck.swift in Sources */,
+				803CC7E81F95A4AD00654A9C /* TempleCell.swift in Sources */,
 				803CC7CC1F95933900654A9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
